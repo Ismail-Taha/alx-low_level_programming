@@ -13,7 +13,7 @@ while (ch <= 'z')
 {
 if (ch != 'e' && ch != 'q')
 {
-utchar(ch);
+putchar(ch);
 }
 ch++;
 }
