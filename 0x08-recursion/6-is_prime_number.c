@@ -1,50 +1,44 @@
 #include "main.h"
 
+int tmp_prime(int n, int i);
+
 /**
- * _strlen_recursion - size
- * @s: pointer to string params
- * Return: recursion
+ * divisors - number is prime?
+ * @n: integer params
+ * @m: integer params
+ * Return: boolean
  */
 
-int _strlen_recursion(char *s)
+int divisors(int n, int m)
 {
-	if (!*s)
+	if (m % n == 0)
 	{
 		return (0);
 	}
-	return (1 + _strlen_recursion(++s));
-}
-
-/**
- * p1 - palindrome
- * @s: pointer to string
- * @l: position
- * Return: boolena
- */
-
-int p1(char *s, int l)
-{
-	if (l < 1)
+	else if (m / 2 > n)
+	{
+		return (divisors(n + 2, m));
+	}
+	else
 	{
 		return (1);
 	}
-
-	if (*s == *(s + l))
-	{
-		return (p1(s + 1, l - 2));
-	}
-	return (0);
 }
 
 /**
- * is_palindrome - palindrome
- * @s: pointer to string
+ * is_prime_number - prime
+ * @n: integer params
  * Return: recursion
  */
 
-int is_palindrome(char *s)
+int is_prime_number(int n)
 {
-	int len = _strlen_recursion(s);
-
-	return (p1(s, len - 1));
+	if ((!(n % 2) && n != 2) || n < 2)
+	{
+		return (0);
+	}
+	else
+	{
+		return (divisors(3, n));
+	}
 }
