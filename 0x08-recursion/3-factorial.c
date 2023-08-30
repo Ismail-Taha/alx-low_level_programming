@@ -5,7 +5,7 @@
  *
  * @n : input integer
  *
- * Return : 0 if n < 0 than 0..
+ * Return: 0 if n is lower than 0 ....
  *
  */
 
