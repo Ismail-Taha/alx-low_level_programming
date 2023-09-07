@@ -26,9 +26,9 @@ int is_digit(char *s)
  */
 int _strlen(char *s)
 {
-	int u = 0;
+	int l = 0;
 
-	while (s[u] != '\0')
+	while (s[l] != '\0')
 	{
 		l++;
 	}
@@ -46,7 +46,7 @@ void errors(void)
 
 /**
  * main - Func
- * @argc: number of arguments
+ * @argc: num of arguments
  * @argv: array of arguments
  * Return: always 0 when Done
  */
