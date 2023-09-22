@@ -1,19 +1,22 @@
 extern printf
 
 section .data
-	format db "Hello, Holberton" ,0
-	new_line db 10,0
+	msg: db "Hello, Holberton" ,0
+	fmt: db "%s", 10, 0
 
 section .txt
 	global main
 
 main:
-	mov rdi,format
+
+	push rbp
+
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
 	call printf
 
-	mov rdi, format
-	call printf
+	pop rbp
 
-	mov rax, 60
-	xor rdi, rdi
-	syscall
+	mov rax,0
+	ret
