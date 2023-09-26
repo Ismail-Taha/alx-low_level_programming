@@ -27,21 +27,21 @@ size_t list_looper(const listint_t *head)
 			while (A != B)
 			{
 				nodes++;
-				Tortoisee = Tortoisee->next;
+				A = A->next;
 				B = B->next;
 			}
 
-			Tortoisee = Tortoisee->next;
-			while (Tortoisee != B)
+			A = A->next;
+			while (A != B)
 			{
 				nodes++;
-				Tortoisee = Tortoisee->next;
+				A = A->next;
 			}
 
 			return (nodes);
 		}
 
-		Tortoisee = Tortoisee->next;
+		A = A->next;
 		B = (B->next)->next;
 	}
 
