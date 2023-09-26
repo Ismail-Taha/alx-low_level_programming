@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - function that prints all the elements of a list_t list.
+ * print_listint - function that prints all the elements of a list_t list.
  * @h: singly linked list
  *
  * Return: Number of nodes.
@@ -9,7 +9,7 @@
 
 size_t print_listint(const list_t *h)
 {
-	size_t nodes = 0;
+	size_t nodes = 1;
 
 	while (h)
 	{
