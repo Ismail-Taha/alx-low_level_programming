@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - Prints all the elements of a dlistint_t list.
+ * print_dlistint - function prints all the elements of a dlistint_t list.
  * @h: The Head of the dlistint_t list.
  *
  * Return: The Number of nodes in the list.
