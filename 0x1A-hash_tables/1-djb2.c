@@ -3,7 +3,8 @@
 /**
  * hash_djb2 - Hash function implementing the djb2 algorithm.
  * @str: The string to hash.
- * Source code: https://gist.github.com/papamuziko/7bb52dfbb859fdffc4bd0f95b76f71e8#file-hash_djb2-c-L13
+ * Source code: https://gist.github.com/papamuziko
+ * --/7bb52dfbb859fdffc4bd0f95b76f71e8#file-hash_djb2-c-L13
  *
  * Return: The calculated hash.
  */
