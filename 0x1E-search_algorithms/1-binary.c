@@ -48,7 +48,7 @@ void print_array(int *array, size_t start, size_t end)
 	size_t i, is_fir = 0;
 
 	printf("Searching in array: ");
-<
+
 	for (i = start; i <= end; i++)
 	{
 		if (is_fir == 0)
@@ -61,3 +61,4 @@ void print_array(int *array, size_t start, size_t end)
 	}
 	printf("\n");
 }
+
